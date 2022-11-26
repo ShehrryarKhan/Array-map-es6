@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-image: linear-gradient(to right, rgb(2, 1, 27), rgba(28, 1, 90, 0.8));
+        }
+
+        .main {
+            background-color: #666464;
+            margin: 100px auto;
+            width: 1000px;
+            padding: 20px;
+            color: white;
+            font-size: 30px;
+        }
+
+        .matrices h1 {
+            color: white;
+            text-align: center;
+            font-family: sans-serif;
+
+        }
+        .map{
+            width: 300px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <script src="app.js"></script>
+
+  
+
+    <div class="main">
+        <div class="matris">
+            <h1>Mapping Array ES6</h1>
+
+            <!-- <img src="matrixLeft.png" width="10px"> -->
+            <div class="map">
+                <p>
+                    [5,3,4] <br>
+                    [11,3,5] <br> 
+                    [6,7,4] <br>
+                </p>
+        
+            </div>
+    
+            <div class="map">
+                <p>
+                    [2,3,4] <br>
+                    [1,12,5] <br>
+                    [6,15,4] <br>
+                </p>
+ 
+
+            </div>
+            
+            <button onclick="Add()"> Add </button>
+            <button onclick="Clear()"> Clear </button>
+
+            <h1 id="screen"></h1>
+            <!-- <img src="matrixright.png" width="10px"> -->
+
+            <div class="map">
+                <p id="text">
+
+                </p>
+
+            </div>
+
+
+
+        </div>
+
+    </div>
+
+
+
+</body>
+
+</html>
