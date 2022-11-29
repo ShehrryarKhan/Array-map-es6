@@ -9,6 +9,7 @@
     <style>
         body {
             background-image: linear-gradient(to right, rgb(2, 1, 27), rgba(28, 1, 90, 0.8));
+
         }
 
         .main {
@@ -18,6 +19,7 @@
             padding: 20px;
             color: white;
             font-size: 30px;
+            text-align: center;
         }
 
         .matrices h1 {
@@ -26,12 +28,27 @@
             font-family: sans-serif;
 
         }
-        .map{
-            width: 300px;
 
-            display: flex;
-            justify-content: center;
+        .map {
+            width: 300px;
+            margin: 100px auto;
             align-items: center;
+        }
+
+        .box button {
+            padding: 5px;
+            border: 1px solid black;
+            background-color: #fff;
+            border-radius: 5px;
+            font-size: 1.2rem;
+            width: 150px;
+        }
+
+        .box button:hover {
+            color: #fff;
+            background: linear-gradient(90deg, hsl(194, 29%, 29%) 0%, #090a08 100%);
+            border: 1px solid transparent !important;
+            transition: 2s;
         }
     </style>
 </head>
@@ -39,7 +56,7 @@
 <body>
     <script src="app.js"></script>
 
-  
+
 
     <div class="main">
         <div class="matris">
@@ -49,24 +66,28 @@
             <div class="map">
                 <p>
                     [5,3,4] <br>
-                    [11,3,5] <br> 
+                    [9,3,5] <br>
                     [6,7,4] <br>
                 </p>
-        
+
             </div>
-    
+
             <div class="map">
                 <p>
                     [2,3,4] <br>
-                    [1,12,5] <br>
-                    [6,15,4] <br>
+                    [1,4,5] <br>
+                    [6,2,4] <br>
                 </p>
- 
+
 
             </div>
-            
-            <button onclick="Add()"> Add </button>
-            <button onclick="Clear()"> Clear </button>
+
+            <div id="box">
+
+
+                <button onclick="Add()"> Add </button>
+                <button onclick="Clear()"> Clear </button>
+            </div>
 
             <h1 id="screen"></h1>
             <!-- <img src="matrixright.png" width="10px"> -->
